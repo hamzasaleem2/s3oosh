@@ -293,7 +293,7 @@ import type {
               onDragEnter,
               onDragOver,
               onDragLeave,
-              // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+              // eslint-disable-next-line
               onDrop: onDropCb as any,
             }
           : {}),
@@ -321,7 +321,7 @@ import type {
         tabIndex: -1,
         ...(!disabled
           ? {
-              // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+              // eslint-disable-next-line
               onChange: onDropCb as any,
               onClick: onInputElementClick,
             }

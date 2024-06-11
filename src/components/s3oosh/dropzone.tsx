@@ -126,7 +126,7 @@ const DropzoneComponent: React.FC<DropzoneComponentProps> = ({
       }
       setErrorMessage("");
     },
-    [filesToUpload, maxTotalFiles]
+    [filesToUpload, maxTotalFiles, onUploadProgress, setFilesToUpload, setUploadUrls, setErrorMessage]
   );
 
   const { getRootProps, getInputProps } = useDropzone({

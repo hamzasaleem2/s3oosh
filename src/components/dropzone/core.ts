@@ -103,7 +103,7 @@ export function isEventWithFiles(event: Partial<Event>) {
   // https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/types
   // https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/Recommended_drag_types#file
   return Array.prototype.some.call(
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    // eslint-disable-next-line
     (event.dataTransfer as any)?.types,
     (type) => type === "Files" || type === "application/x-moz-file",
   );

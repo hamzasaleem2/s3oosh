@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { getFile } from "@/components/s3oosh/_actions/getFile";
 
 export async function GET(req: Request) {

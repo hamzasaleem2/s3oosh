@@ -13,6 +13,7 @@ export const getFileIconAndColor = (file: File, thumbnails: Record<string, strin
   if (file.type.includes(FileTypes.Image) && thumbnails[file.name]) {
     return {
       icon: (
+        <picture>
         <img
           src={thumbnails[file.name]}
           alt={file.name}
@@ -20,6 +21,7 @@ export const getFileIconAndColor = (file: File, thumbnails: Record<string, strin
           width={20}
           height={20}
         />
+        </picture>
       ),
       color: "",
     };

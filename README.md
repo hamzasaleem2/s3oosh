@@ -2,6 +2,8 @@
 
 S3oosh allows users to upload multiple files at once to S3 Buckets. It provides a drag-and-drop interface for users to easily upload files to a S3 Bucket. The component supports various file types and allows users to set maximum file count, maximum file size, and accepted file types.
 
+![s3oosh it!](https://github.com/hamzasaleem2/s3oosh/blob/main/screenshot.png)
+
 ## Features
 
 - **Drag-and-Drop Interface**: Users can easily drag and drop files or click to browse for files to upload.

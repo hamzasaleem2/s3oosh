@@ -29,9 +29,10 @@ export interface S3ooshConfig {
 
 interface S3ooshProps {
   config: S3ooshConfig;
+  dirInBucket?: string | null;
 }
 
-export default function S3oosh({ config }: S3ooshProps) {
+export default function S3oosh({ config, dirInBucket = null }: S3ooshProps) {
   const { maxTotalFiles, maxSize, acceptedFileTypes } = config;
   const [filesToUpload, setFilesToUpload] = useState<FileUploadProgress[]>([]);
   const [uploadUrls, setUploadUrls] = useState<Record<string, string>>({});
@@ -95,6 +96,7 @@ export default function S3oosh({ config }: S3ooshProps) {
         setErrorMessage={setErrorMessage}
         onUploadProgress={onUploadProgress}
         removeFile={removeFile}
+        dirInBucket={dirInBucket}
       />
   );
 }

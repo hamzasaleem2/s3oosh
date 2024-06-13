@@ -30,6 +30,7 @@ interface DropzoneComponentProps {
     fileStatus: FileStatus
   ) => void;
   removeFile: (file: File) => void;
+  dirInBucket: string | null;
 }
 
 const DropzoneComponent: React.FC<DropzoneComponentProps> = ({
@@ -44,6 +45,7 @@ const DropzoneComponent: React.FC<DropzoneComponentProps> = ({
   setErrorMessage,
   onUploadProgress,
   removeFile,
+  dirInBucket,
 }) => {
   const [thumbnails, setThumbnails] = useState<Record<string, string>>({});
 
@@ -72,7 +74,8 @@ const DropzoneComponent: React.FC<DropzoneComponentProps> = ({
         try {
           const presignedUrlResponse = await getPreSignedUrl(
             file.name,
-            file.type
+            file.type,
+            dirInBucket
           );
           const { url, newFileName } = presignedUrlResponse;
 

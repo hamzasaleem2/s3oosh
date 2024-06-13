@@ -1,4 +1,5 @@
 import S3oosh from "@/components/s3oosh";
+import { v4 } from "uuid";
 
 export default function Home() {
   const S3ooshConfig = {
@@ -13,6 +14,7 @@ export default function Home() {
   };
 
   return (
-      <S3oosh config={S3ooshConfig} />
+      <S3oosh config={S3ooshConfig} dirInBucket={v4()} /> // v4() and dirInBucket are optional
+      //dirInBucket is optional and is used to create a folder in the S3 bucket
   );
 }

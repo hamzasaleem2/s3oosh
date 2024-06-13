@@ -17,6 +17,7 @@ S3oosh allows users to upload multiple files at once to S3 Buckets. It provides 
 
 ```javascript
 import S3oosh from "@/components/s3oosh";
+import { v4 } from "uuid";
 
 export default function Page() {
   const S3ooshConfig = {
@@ -31,7 +32,8 @@ export default function Page() {
   };
 
   return (
-      <S3oosh config={S3ooshConfig} />
+      <S3oosh config={S3ooshConfig} dirInBucket={v4()} /> // v4() and dirInBucket are optional
+      //dirInBucket is optional and is used to create a folder in the S3 bucket
   );
 }
 ```

@@ -127,6 +127,10 @@ To contribute to S3oosh development, follow these steps:
 3. Make changes and test locally: `bun dev`
 4. Submit a pull request with your changes.
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=hamzasaleem2/s3oosh&type=Date)](https://star-history.com/#hamzasaleem2/s3oosh&Date)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

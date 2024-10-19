@@ -129,7 +129,13 @@ To contribute to S3oosh development, follow these steps:
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=hamzasaleem2/s3oosh&type=Date)](https://star-history.com/#hamzasaleem2/s3oosh&Date)
+<a href="https://star-history.com/#hamzasaleem2/s3oosh&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=hamzasaleem2/s3oosh&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=hamzasaleem2/s3oosh&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=hamzasaleem2/s3oosh&type=Date" />
+ </picture>
+</a>
 
 ## License
 
